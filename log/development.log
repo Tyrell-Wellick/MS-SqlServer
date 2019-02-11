@@ -1,0 +1,161 @@
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:45:59 -0300
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 157ms
+
+
+  
+NoMethodError (undefined method `raise_in_transactional_callbacks=' for ActiveRecord::Base:Class):
+  
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/railtie.rb:112:in `block (3 levels) in <class:Railtie>'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/railtie.rb:111:in `each'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/railtie.rb:111:in `block (2 levels) in <class:Railtie>'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:49:in `each'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/base.rb:25:in `<top (required)>'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `block in require'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:258:in `load_dependency'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/dependencies.rb:292:in `require'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/instrumentation.rb:43:in `render'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/abstract_controller/base.rb:186:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/rendering.rb:30:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/callbacks.rb:131:in `run_callbacks'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/rescue.rb:20:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/notifications.rb:166:in `block in instrument'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/notifications.rb:166:in `instrument'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/abstract_controller/base.rb:124:in `process'
+vendor/bundle/ruby/2.5.0/gems/actionview-5.1.6.1/lib/action_view/rendering.rb:30:in `process'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal.rb:189:in `dispatch'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_controller/metal.rb:253:in `dispatch'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/journey/router.rb:33:in `each'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/journey/router.rb:33:in `serve'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/routing/route_set.rb:844:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/etag.rb:25:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/conditional_get.rb:25:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/session/abstract/id.rb:232:in `context'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/session/abstract/id.rb:226:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+vendor/bundle/ruby/2.5.0/gems/activerecord-5.1.6.1/lib/active_record/migration.rb:556:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.5.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.5.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.5.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.5.0/gems/railties-5.1.6.1/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.5.0/gems/railties-5.1.6.1/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.5.0/gems/railties-5.1.6.1/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.5.0/gems/activesupport-5.1.6.1/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.5.0/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.5.0/gems/railties-5.1.6.1/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.5.0/gems/rack-2.0.6/lib/rack/handler/webrick.rb:86:in `service'
+/usr/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:50:37 -0300
+  
+SyntaxError (/home/gonzalo/Documents/MS1-SqlServer/MS1_SqlServer/MS-SqlServer/app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+    end
+       ^):
+  
+app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:50:39 -0300
+  
+SyntaxError (/home/gonzalo/Documents/MS1-SqlServer/MS1_SqlServer/MS-SqlServer/app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+    end
+       ^):
+  
+app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:51:02 -0300
+  
+SyntaxError (/home/gonzalo/Documents/MS1-SqlServer/MS1_SqlServer/MS-SqlServer/app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+    end
+       ^):
+  
+app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:51:06 -0300
+  
+SyntaxError (/home/gonzalo/Documents/MS1-SqlServer/MS1_SqlServer/MS-SqlServer/app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+    end
+       ^):
+  
+app/controllers/api/v1/api_controller.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:51:32 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 500 Internal Server Error in 105ms
+
+
+  
+NoMethodError (undefined method `raise_in_transactional_callbacks=' for ActiveRecord::Base:Class):
+  
+app/controllers/api/v1/api_controller.rb:10:in `hola'
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:52:51 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 500 Internal Server Error in 135ms
+
+
+  
+NoMethodError (undefined method `raise_in_transactional_callbacks=' for ActiveRecord::Base:Class):
+  
+app/controllers/api/v1/api_controller.rb:6:in `hola'
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:52:54 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:55:44 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:55:46 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/12323" for 127.0.0.1 at 2019-02-11 11:55:51 -0300
+Processing by Api::V1::ApiController#not_found as HTML
+  Parameters: {"path"=>"12323"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:55:59 -0300
+Processing by Api::V1::ApiController#hola as HTML
+Completed 200 OK in 0ms (Views: 0.2ms)
+
+
